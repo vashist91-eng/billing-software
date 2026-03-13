@@ -1,0 +1,1 @@
+{\n  "env": {\n    "browser": true,\n    "es2021": true\n  },\n  "extends": ["eslint:recommended"],\n  "parserOptions": {\n    "ecmaVersion": 12\n  },\n  "rules": {\n    "indent": ["error", 2],\n    "linebreak-style": ["error", "unix"],\n    "quotes": ["error", "single"],\n    "semi": ["error", "always"]\n  }\n}
