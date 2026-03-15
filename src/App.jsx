@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from "react";
+import LoginPage from "./pages/LoginPage";
+import AppLayout from "./layout/AppLayout";
 
-function App() {
-    return (
-        <div>
-            <h1>Welcome to the Billing Software</h1>
-        </div>
-    );
+export default function BillingApp() {
+  const [page, setPage] = useState("login");
+
+  if (page === "login") {
+    return <LoginPage onLogin={() => setPage("dashboard")} />;
+  }
+
+  return <AppLayout page={page} setPage={setPage} />;
 }
-
-export default App;
